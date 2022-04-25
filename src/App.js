@@ -3,20 +3,19 @@ import { Contador } from './Components/Contador';
 function App() {
   return (
     <div className="App">
-     <h1>Memorizacion en REACT</h1>
-     <hr />
-     <h2>Teoria</h2>
-     <h3>
-       <a
-        href='https://es.reactjs.org/docs/hooks-reference.html#usememo='
-        target='_blank'
-        rel='noreferrer'
-       >
-         memo
-       </a>
-     </h3>
-     <h3>
-     <ul>
+      <h1>Memorización en React</h1>
+      <hr />
+      <h2>Teoria</h2>
+      <h3>
+        <a
+          href="https://es.reactjs.org/docs/react-api.html#reactmemo"
+          target="_blank"
+          rel="noreferrer"
+        >
+          memo
+        </a>
+      </h3>
+      <ul>
         <li>Se encarga de memorizar un componente,</li>
         <li>
           Lo vuelve a memorizar al momento de que sus <b>props</b> cambian.
@@ -34,7 +33,9 @@ function App() {
             <li>Un componente se vuelve muy pesado.</li>
             <li>Salen alertas de rendimiento en la consola.</li>
           </ul>
-          <h3>
+        </li>
+      </ul>
+      <h3>
         <a
           href="https://es.reactjs.org/docs/hooks-reference.html#usecallback"
           target="_blank"
@@ -55,10 +56,23 @@ function App() {
           Úsalo siempre que se pase una función como parámetro de un efecto.
         </li>
       </ul>
+      <h3>
+        <a
+          href="https://es.reactjs.org/docs/hooks-reference.html#usememo"
+          target="_blank"
+          rel="noreferrer"
+        >
+          useMemo
+        </a>
+      </h3>
+      <ul>
+        <li>
+          Memoriza un valor calculado, es decir, el resultado de una función.
         </li>
+        <li>Genera propiedades computadas.</li>
+        <li>Úsalo en procesos pesados.</li>
       </ul>
-     </h3>
-     <hr />
+      <hr />
      <Contador />
     </div>
   );
